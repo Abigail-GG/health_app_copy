@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 
 # create route that renders index.html template
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
     return render_template ('index.html')
 
